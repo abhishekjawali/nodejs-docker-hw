@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nodejs-docker-hw
+  labels:
+    app: nodejs-docker-hw
+spec:
+  containers:
+  - name: k8s-demo
+    image: abhishekjv/nodejs-hw
+    ports:
+    - containerPort: 3000
